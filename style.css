@@ -1,0 +1,36 @@
+#Entete
+{
+    background-color: Red;
+}
+
+footer
+{
+    background-color: Green;
+}
+
+#Bandeau
+{
+    background-color: orangered;
+}
+
+#combo
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#Hébergement
+{
+    background-color: purple;
+}
+
+#Populaire
+{
+    background-color: yellow;
+}
+
+#Activités
+{
+    background-color: blue;
+}
