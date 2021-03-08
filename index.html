@@ -3,21 +3,50 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="style.css"> <!-- Lien avec le fichier style.css -->
+        <script src="https://kit.fontawesome.com/4389809c4d.js" crossorigin="anonymous"></script>
         <title>Reservia</title> <!-- Titre de la page -->
     </head>
 
     <body> <!-- Corps du code -->
         <div id="Entete"> <!-- 1er bloc, Entete ,logo et lien -->
             <header>
-                <img src="images/logo/Reservia.svg" alt="Logo de Reservia">
+
+                    <img src="images/logo/Reservia.svg" alt="Logo de Reservia"> <!-- Lien bers l'image du logo -->
+                    <a href="https://openclassrooms.com">Hébergement</a>
+                    <a href="https://openclassrooms.com">Activités</a>
+                    <a href="https://openclassrooms.com">S'inscrire</a>
             </header>
         </div>
 
+
+
     <div id="Bandeau"> <!-- 2eme bloc, barre de recherche et filtres -->
         <section>
-            <h3>Filtres</h3>
+            <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
+            <p>En plein centre ville ou en pleine nature</p>
+
+            <i class="fas fa-map-marker-alt"></i>
+            <input type="search" id="site-search" name="recherche"
+                   aria-label="Search through site content" value="Marseille,France">
+            <button>Rechercher</button>
+
+            <section>
+                <nav id="Filtres">
+                    <h3>Filtres</h3>
+                    <p> <i class="fas fa-money-bill-wave"></i> Economique</p>
+                    <p> <i class="fas fa-child"></i> Familial</p>
+                    <p> <i class="fas fa-heart"></i>  Romantique</p>
+                    <p> <i class="fas fa-dog"></i> Animaux autorisés</p>
+                </nav>
+            </section>
+
+
+
+            <p><i class="fas fa-info-circle"></i> Plus de 500 logements sont disponibles dans cette ville</p>
         </section>
     </div>
+
+
 
     <div id="Combo"> <!-- 3eme bloc, Hebergement + Les plus populaires, composé de deux parties distincte-->
         <div id="Hébergement">
@@ -29,18 +58,27 @@
         </div>
     </div>
 
+
+
     <div id="Activités"> <!-- 4eme bloc, Activités-->
         <h3>Activités à Marseille</h3>
     </div>
 
+
+
     <footer> <!-- 5eme bloc, Pied de page-->
         <h4>A propos</h4>
-
+        <a href="https://openclassrooms.com">Fonctionnement du site</a>
+        <a href="https://openclassrooms.com">Conditions générales de vente</a>
+        <a href="https://openclassrooms.com">Données et confidentialité</a>
 
         <h4>Nos hébergements</h4>
-
+        <a href="https://openclassrooms.com">Charte qualité</a>
+        <a href="https://openclassrooms.com">Soumettre votre hôtel</a>
 
         <h4>Assistance</h4>
+        <a href="https://openclassrooms.com">Centre d'aide</a>
+        <a href="https://openclassrooms.com">Nous contacter</a>
 
     </footer>
     </body>

@@ -1,16 +1,21 @@
 #Entete
 {
     background-color: Red;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
 }
 
-footer
-{
-    background-color: Green;
-}
 
 #Bandeau
 {
     background-color: orangered;
+}
+
+#Filtres
+{
+    display: flex;
+    align-items: flex-start;
 }
 
 #Combo
@@ -35,4 +40,9 @@ footer
 #Activités
 {
     background-color: blue;
+}
+
+footer
+{
+    background-color: Green;
 }
