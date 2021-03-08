@@ -13,7 +13,7 @@ footer
     background-color: orangered;
 }
 
-#combo
+#Combo
 {
     display: flex;
     justify-content: space-between;
@@ -23,11 +23,13 @@ footer
 #Hébergement
 {
     background-color: purple;
+    width: 65%;
 }
 
 #Populaire
 {
     background-color: yellow;
+    width: 30%;
 }
 
 #Activités
