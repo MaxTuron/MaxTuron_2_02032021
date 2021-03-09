@@ -1,11 +1,13 @@
 #Entete
 {
+    display: flex;
     background-color: Red;
 }
 
 
 #Bandeau
 {
+    display: flex;
     background-color: orangered;
 }
 
@@ -23,22 +25,26 @@
 
 #Hébergement
 {
+    display: flex;
     background-color: purple;
     width: 65%;
 }
 
 #Populaire
 {
+    display: flex;
     background-color: yellow;
     width: 30%;
 }
 
 #Activités
 {
+    display: flex;
     background-color: blue;
 }
 
 footer
 {
+    display: flex;
     background-color: Green;
 }
