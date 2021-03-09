@@ -8,12 +8,15 @@
 #Bandeau
 {
     display: flex;
+    flex-direction: column;
     background-color: orangered;
 }
 
 #Filtres
 {
     display: flex;
+    justify-content: space-between;
+    width: 35%;
 }
 
 #Combo
@@ -28,6 +31,7 @@
     display: flex;
     flex-direction: column;
     background-color: purple;
+    height: auto;
     width: 65%;
 }
 
@@ -36,6 +40,7 @@
     display: flex;
     flex-direction: column;
     background-color: yellow;
+    height: auto;
     width: 30%;
 }
 
@@ -45,30 +50,50 @@
     background-color: blue;
 }
 
-footer
+#Footer
 {
     display: flex;
-    background-color: Green;
+    background-color: green;
 }
 
 
-.row-1
+.row-H
 {
     display: flex;
-    justify-content :space-around;
+    justify-content: space-around;
 }
 
-.row-2
-{
-    display: flex;
-    justify-content :space-around;
-}
-
-.col
+.col-H
 {
     height: 300px;
-    width: 200px
+    width: 200px;
 }
+
+.row-P
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.col-P
+{
+    height: 300px;
+    width: 200px;
+}
+
+.row-F
+{
+    display: flex;
+}
+
+.col-F
+{
+    justify-items: center;
+    width: 33%;
+}
+
+
 
 .Popu {
     max-width: 100%;
