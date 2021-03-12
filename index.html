@@ -4,37 +4,40 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css"> <!-- Lien avec le fichier style.css -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-
         <script src="https://kit.fontawesome.com/4389809c4d.js" crossorigin="anonymous"></script>
         <title>Reservia</title> <!-- Titre de la page -->
     </head>
 
     <body> <!-- Corps du code -->
-        <div id="Entete"> <!-- 1er bloc, Entete ,logo et lien -->
-            <header>
+        <div id="entete"> <!-- 1er bloc, Entete ,logo et lien -->
+            <div class="logo">
+                <img src="images/logo/Reservia.svg" alt="Logo de Reservia"> <!-- Lien bers l'image du logo -->
+            </div>
 
-                    <img src="images/logo/Reservia.svg" alt="Logo de Reservia"> <!-- Lien bers l'image du logo -->
-                    <a href="https://openclassrooms.com">Hébergement</a>
-                    <a href="https://openclassrooms.com">Activités</a>
-                    <a href="https://openclassrooms.com">S'inscrire</a>
-            </header>
+            <div class="lien">
+                <a href="#hebergement">Hébergement</a>
+                <a href="#activites">Activités</a>
+            </div>
+
+            <div class="inscrire">
+                <a href="https://openclassrooms.com">S'inscrire</a>
+            </div>
         </div>
 
 
 
-    <div id="Bandeau"> <!-- 2eme bloc, barre de recherche et filtres -->
+    <div id="bandeau"> <!-- 2eme bloc, barre de recherche et filtres -->
         <div>
             <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
             En plein centre ville ou en pleine nature
         </div>
 
-        <div id="Recherche">
+        <div id="recherche">
             <i class="fas fa-map-marker-alt"></i><input type="search" id="site-search" name="recherche" aria-label="Search through site content" value="Marseille,France"> <!-- Icone de marqueur + Barre de recherche -->
             <button>Rechercher</button> <!-- Bouton rechercher -->
         </div>
 
-        <div id="Filtres"> <!-- Filtres de recherche -->
+        <div id="filtres"> <!-- Filtres de recherche -->
             <h4>Filtres</h4>
             <i class="fas fa-money-bill-wave">Economique</i>
             <i class="fas fa-child">Familial</i>
@@ -49,97 +52,94 @@
 
 
 
-    <div id="Combo"> <!-- 3eme bloc, Hebergement + Les plus populaires, composé de deux parties distincte-->
-        <div id="Hébergement"> <!-- 1er sous-bloc, Hebergement -->
+    <div id="container"> <!-- 3eme bloc, Hebergement + Les plus populaires, composé de deux parties distincte-->
+        <div id="hebergement"> <!-- 1er sous-bloc, Hebergement -->
             <h3>Hébergement à Marseille</h3>
-                <div class="row-H"> <!-- 1ere ligne d'élements -->
+            <div class="cardsHebergement"> <!-- 1ere ligne d'élements -->
 
-                    <div class="col-H"> <!-- 1er Hôtel de la 1ere ligne -->
-                        <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Logo de Reservia" class="Heb">
-                        <h4>Auberge de la Cannebière</h4>
-                        Nuit à partir de 25€<br>
-                        <!-- Liste des images étoiles -->
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-
-                    <div class="col-H"> <!-- 2eme Hôtel de la 1ere ligne -->
-                        <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Logo de Reservia" class="Heb">
-                        <h4>Hôtel du port</h4>
-                        Nuit à partir de 52€<br>
-                        <!-- Liste des images étoiles -->
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-
-                    <div class="col-H"> <!-- 3eme Hôtel de la 1ere ligne -->
-                        <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Logo de Reservia" class="Heb">
-                        <h4>Hôtel Les mouettes</h4>
-                        Nuit à partir de 76€<br>
-                        <!-- Liste des images étoiles -->
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-
+                <div class="cards"> <!-- 1er Hôtel de la 1ere ligne -->
+                    <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Logo de Reservia" class="heb">
+                    <h4>Auberge de la Cannebière</h4>
+                    Nuit à partir de 25€<br>
+                    <!-- Liste des images étoiles -->
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
                 </div>
-                <div class="row-H"> <!-- 2eme ligne d'élements -->
 
-                    <div class="col-H"> <!-- 1er Hôtel de la 2eme ligne -->
-                        <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Logo de Reservia" class="Heb"><br>
-                        <h4>Hôtel de la mer</h4>
-                        Nuit à partir de 46€<br>
-                        <!-- Liste des images étoiles -->
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-
-                    <div class="col-H"> <!-- 2eme Hôtel de la 2eme ligne -->
-                        <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Logo de Reservia" class="Heb"><br>
-                        <h4>Auberge Le Panier</h4>
-                        Nuit à partir de 23€<br>
-                        <!-- Liste des images étoiles -->
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-
-                    <div class="col-H"> <!-- 3eme Hôtel de la 2eme ligne -->
-                        <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Logo de Reservia" class="Heb"><br>
-                        <h4>Hôtel Chez Amina</h4>
-                        Nuit à partir de 96€<br>
-                        <!-- Liste des images étoiles -->
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-
+                <div class="cards"> <!-- 2eme Hôtel de la 1ere ligne -->
+                    <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Logo de Reservia" class="heb image">
+                    <h4>Hôtel du port</h4>
+                    Nuit à partir de 52€<br>
+                    <!-- Liste des images étoiles -->
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
                 </div>
-                <h4>Afficher plus</h4>
+
+                <div class="cards"> <!-- 3eme Hôtel de la 1ere ligne -->
+                    <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Logo de Reservia" class="heb">
+                    <h4>Hôtel Les mouettes</h4>
+                    Nuit à partir de 76€<br>
+                    <!-- Liste des images étoiles -->
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+
+                <div class="cards"> <!-- 1er Hôtel de la 2eme ligne -->
+                    <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Logo de Reservia" class="heb"><br>
+                    <h4>Hôtel de la mer</h4>
+                    Nuit à partir de 46€<br>
+                    <!-- Liste des images étoiles -->
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+
+                <div class="cards"> <!-- 2eme Hôtel de la 2eme ligne -->
+                    <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Logo de Reservia" class="heb"><br>
+                    <h4>Auberge Le Panier</h4>
+                    Nuit à partir de 23€<br>
+                    <!-- Liste des images étoiles -->
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+
+                <div class="cards"> <!-- 3eme Hôtel de la 2eme ligne -->
+                    <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Logo de Reservia" class="heb"><br>
+                    <h4>Hôtel Chez Amina</h4>
+                    Nuit à partir de 96€<br>
+                    <!-- Liste des images étoiles -->
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+
             </div>
+            <h4>Afficher plus</h4>
+        </div>
 
 
-        <div id="Populaire"> <!-- 2eme sous-bloc, Les plus populaires -->
-            <div class="row-P">
+        <div id="populaire"> <!-- 2eme sous-bloc, Les plus populaires -->
+            <div class="cardsPopulaire">
                 <h3>Les plus populaires</h3>
 
-                <div class="col-P">
-                    <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Logo de Reservia" class="Popu"><br>
+                <div class="cards">
+                    <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Logo de Reservia" class="popu"><br>
                     <h4>Hôtel Le soleil du matin</h4>
                     Nuit à partir de 128€<br>
                     <i class="fas fa-star"></i>
@@ -149,8 +149,8 @@
                     <i class="fas fa-star"></i>
                 </div>
 
-                <div class="col-P">
-                    <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Logo de Reservia" class="Popu"><br>
+                <div class="cards">
+                    <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Logo de Reservia" class="popu"><br>
                     <h4> Au coeur de l'eau Chambres d'hôtes</h4>
                     Nuit à partir de 71€<br>
                     <i class="fas fa-star"></i>
@@ -160,8 +160,8 @@
                     <i class="far fa-star"></i>
                 </div>
 
-                <div class="col-P">
-                    <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Logo de Reservia" class="Popu"><br>
+                <div class="cards">
+                    <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Logo de Reservia" class="popu"><br>
                     <h4>Hôtel Tout bleu et blanc</h4>
                     Nuit à partir de 58€<br>
                     <i class="fas fa-star"></i>
@@ -177,29 +177,63 @@
 
 
 
-    <div id="Activités"> <!-- 4eme bloc, Activités-->
-        <h3>Activités à Marseille</h3>
+    <div id="activites"> <!-- 4eme bloc, Activités-->
+        <div>
+            <h3>Activités à Marseille</h3>
+        </div>
+        <div class="cardsActivite">
+            <div class="cards grand">
+                <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Logo de Reservia" class="act"><br>
+                <h4>Vieux Port</h4>
+            </div>
+
+
+            <div class="cards petit">
+                <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Logo de Reservia" class="act"><br>
+                <h4>Fort de Pomègues</h4>
+
+                <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Logo de Reservia" class="act"><br>
+                <h4>Îles du Grioul</h4>
+            </div>
+
+
+
+            <div class="cards grand">
+                <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Logo de Reservia" class="act"><br>
+                <h4>Parc National des Calanques</h4>
+            </div>
+
+
+
+            <div class="cards petit">
+                <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Logo de Reservia" class="act"><br>
+                <h4>Notre-Dame-de-la-Garde</h4>
+
+                <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Logo de Reservia" class="act"><br>
+                <h4>Parc Longchamp</h4>
+            </div>
+        </div>
     </div>
 
 
 
-    <footer id="Footer"> <!-- 5eme bloc, Pied de page-->
-        <div class="row-F">
-            <div class="col-F">
+    <footer id="footer"> <!-- 5eme bloc, Pied de page-->
+        <div class="cardsFooter">
+            <div class="foot">
                 <h4>A propos</h4>
-                <a href="https://openclassrooms.com">Fonctionnement du site</a>
-                <a href="https://openclassrooms.com">Conditions générales de vente</a>
+                <a href="https://openclassrooms.com">Fonctionnement du site</a><br>
+                <a href="https://openclassrooms.com">Conditions générales de vente</a><br>
                 <a href="https://openclassrooms.com">Données et confidentialité</a>
             </div>
 
-            <div class="col-F">
+            <div class="foot">
                 <h4>Nos hébergements</h4>
-                <a href="https://openclassrooms.com">Charte qualité</a>
+                <a href="https://openclassrooms.com">Charte qualité</a><br>
                 <a href="https://openclassrooms.com">Soumettre votre hôtel</a>
             </div>
-            <div class="col-F">
+            <div class="foot">
                 <h4>Assistance</h4>
-                <a href="https://openclassrooms.com">Centre d'aide</a>
+                <a href="https://openclassrooms.com">Centre d'aide</a><br>
                 <a href="https://openclassrooms.com">Nous contacter</a>
             </div>
         </div>

@@ -1,107 +1,233 @@
-#Entete
-{
-    display: flex;
-    background-color: Red;
-}
-
-
-#Bandeau
-{
-    display: flex;
-    flex-direction: column;
-    background-color: orangered;
-}
-
-#Filtres
+#entete
 {
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
+    align-items : center;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#bandeau
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+#filtres
+{
+    display: flex;
     width: 35%;
+    height: auto;
+    margin: 0;
 }
 
-#Combo
+#container
 {
     display: flex;
     justify-content: space-between;
+    height: auto;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 
-#Hébergement
+#hebergement
 {
     display: flex;
     flex-direction: column;
-    background-color: purple;
-    height: auto;
+    background-color: lightgrey;
     width: 65%;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    border-radius: 10px;
 }
 
-#Populaire
+#populaire
 {
     display: flex;
     flex-direction: column;
-    background-color: yellow;
+    background-color: lightgrey;
     height: auto;
-    width: 30%;
+    width: 35%;
+    margin-left: 30px;
+    padding-left: 30px;
+    border-radius: 10px;
+    margin-bottom: 15px;
 }
 
-#Activités
+#activites
 {
     display: flex;
-    background-color: blue;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
-#Footer
+#footer
 {
-    display: flex;
-    background-color: green;
+    background-color: lightgrey;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
-
-.row-H
+html
 {
-    display: flex;
-    justify-content: space-around;
+    font-family: 'Raleway', sans-serif;
 }
 
-.col-H
-{
-    height: 300px;
-    width: 200px;
-}
-
-.row-P
+.cardsHebergement
 {
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.cardsPopulaire
+{
+    display: flex;
     flex-direction: column;
 }
 
-.col-P
-{
-    height: 300px;
-    width: 200px;
-}
-
-.row-F
+.cardsActivite
 {
     display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.col-F
+.cardsFooter
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: auto;
+}
+
+.cards
+{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    margin-right: 40px;
+    margin-bottom: 50px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px grey;
+}
+
+.foot
+{
+    padding-right: 400px;
+    padding-left: 10px;
+}
+
+.grand
 {
     justify-items: center;
-    width: 33%;
+    width: 25%;
 }
 
-
-
-.Popu {
-    max-width: 100%;
-    height: 100px;
-}
-
-.Heb
+.petit
 {
-    max-width: 100%;
-    height: 100px;
+    justify-items: center;
+    width: 25%;
 }
+
+
+.popu {
+    width: 100%;
+    height: 100px;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+.heb
+{
+    width: 100%;
+    height: 100px;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+.act{
+    width: 100%;
+    height: 100px;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+
+i
+{
+    color: Dodgerblue;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 375px) {
+    #entete
+    {
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
+    }
+
+    #container,#hebergement, #populaire, #activites
+    {
+        background-color: aqua;
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+
+    #populaire
+    {
+        margin-left: 0;
+        width: auto;
+    }
+
+    .cardsFooter
+    {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+    }
+
+    .foot
+    {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .cards
+    {
+        height: auto;
+    }
+
+    .cardsActivite
+    {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .grand, .petit
+    {
+        padding-left: 30px;
+    }
+}
+
