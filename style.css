@@ -150,13 +150,13 @@ CSS des classes
     padding-right: 10px;
 }
 
-.info
+.infoBandeau
 {
     display: flex;
     align-items: center;
 }
 
-.info i
+.infoBandeau i
 {
     background-color: #0065FC;
     color: white;
@@ -164,7 +164,20 @@ CSS des classes
     border-radius: 20px;
 }
 
+.infoPopulaire
+{
+    display: flex;
+    flex-direction: row;
 
+    justify-content: space-between;
+}
+
+.infoPopulaire i
+{
+    color: black;
+    padding-top: 20px;
+    padding-right: 40px;
+}
 
 
 
@@ -205,7 +218,7 @@ CSS des classes
 .large
 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     margin-right: 40px;
     margin-bottom: 50px;
@@ -219,13 +232,17 @@ CSS des classes
 {
     display: flex;
     align-items: flex-start;
-    height: 100px;
+    height: 130px;
     width: 130px;
     border-top-left-radius: 10px;
     border-bottom-left-radius : 10px;
-
+    position: absolute;
 }
 
+.large h4, .large div, .large p
+{
+    padding-left: 150px;
+}
 
 
 .cardsActivite
@@ -330,21 +347,94 @@ CSS Responsive
         display: flex;
         justify-content: left;
         flex-direction: column;
+        margin: 0;
     }
 
-    #container,#hebergement, #populaire, #activites
+    #bandeau
+    {
+        margin: 0;
+    }
+
+
+    #container
     {
         display: flex;
-        flex-direction: column;
-        width: auto;
-        height: auto;
+        flex-direction: column-reverse;
+        margin: 0;
     }
 
     #populaire
     {
         margin-left: 0;
+        height: auto;
+        width: 90%;
+        border-radius: 0;
+    }
+
+    #hebergement
+    {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        background-color: white;
+        padding-left: 30px;
+    }
+
+    #activites
+    {
+        display: flex;
+        flex-direction: column;
         width: auto;
         height: auto;
+        background-color: white;
+        padding-left: 30px;
+        margin: 0;
+    }
+
+    #footer
+    {
+        margin: 0;
+    }
+
+
+
+    .filtres
+    {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+    }
+
+    .cardsPopulaire
+    {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .large
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 10px 10px 5px grey;
+        padding: 4px;
+        width: 300px;
+    }
+
+    .large img
+    {
+        display: flex;
+        align-items: flex-start;
+        height: 160px;
+        width: 120px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius : 10px;
+        position: absolute;
     }
 
     .cardsFooter
@@ -363,6 +453,8 @@ CSS Responsive
     .cards
     {
         height: auto;
+        width: 300px;
+        margin-right: 0;
     }
 
     .cardsActivite
@@ -375,7 +467,8 @@ CSS Responsive
 
     .grand, .petit
     {
-        width: 100%;
+        width: 300px;
+        height: 200px;
     }
 }
 
