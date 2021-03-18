@@ -20,10 +20,9 @@ CSS des Div
     justify-content: space-between;
     flex-direction: row;
     align-items : center;
-    margin-bottom: 15px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 0 24px 16px 24px;
 }
+
 
 /*
 2eme bloc
@@ -121,6 +120,27 @@ div recherche
 {
     display: none;
 }
+
+.lien
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+}
+
+.lien__cards a:hover
+{
+    padding-top: 10px;
+    border-top: 3px solid #0065FC;
+}
+
+.inscrire
+{
+    padding-left: 24px;
+}
+
+
 .recherche
 {
     display: flex;
@@ -129,7 +149,7 @@ div recherche
     border-radius: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
-    border: 1px solid darkgrey;
+    border: 1px solid #F2F2F2;
     width: 270px;
 }
 
@@ -165,9 +185,9 @@ div de chaque filtre
     display: flex;
     align-items: center;
     border-radius: 50px;
-    margin-top: 10px;
-    border: 1px solid darkgrey;
+    border: 1px solid #F2F2F2;
     height: 32px;
+    margin: 10px 5px 0 5px;
 }
 
 /*
@@ -216,9 +236,8 @@ Image en fin de bloc Bandeau
  */
 .infoBandeau i
 {
-    background-color: #0065FC;
-    color: white;
-    border: lightgrey solid 1px;
+    color: #0065FC;
+    border: #F2F2F2 solid 1px;
     border-radius: 20px;
     display: flex;
     justify-content: center;
@@ -457,6 +476,7 @@ Supprime la décoration des liens
 a
 {
     text-decoration: none;
+    color: black;
 }
 
 
