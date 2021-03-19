@@ -121,6 +121,11 @@ div recherche
     display: none;
 }
 
+#searchIcon
+{
+    display: none;
+}
+
 .lien
 {
     display: flex;
@@ -281,6 +286,8 @@ Classe générale des cartes
     border-radius: 10px;
     box-shadow: 10px 10px 5px grey;
     padding: 4px;
+    text-decoration: none;
+    color: black;
 }
 
 /*
@@ -300,7 +307,9 @@ Images lié aux cartes
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
+    text-decoration: none;
 }
+
 
 .cardsPopulaire
 {
@@ -383,6 +392,8 @@ Div grand
     border-radius: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
+    text-decoration: none;
+    color: black ;
 }
 
 /*
@@ -434,6 +445,8 @@ Sous-partie des la div petit
     margin-right: 10px;
     margin-bottom: 10px;
     border: 1px solid #F2F2F2;
+    text-decoration: none;
+    color: black;
 }
 
 
@@ -459,6 +472,11 @@ Ajustement des liens
     padding-left: 10px;
 }
 
+.foot a
+{
+    text-decoration: none;
+    color: black;
+}
 
 
 /*
@@ -502,7 +520,6 @@ CSS Responsive
     {
         display: flex;
         flex-direction: column;
-        align-items: flex-start ;
         margin: 0;
     }
 
@@ -516,41 +533,38 @@ CSS Responsive
     {
         display: flex;
         flex-direction: column-reverse;
-        margin: 0;
+        width: 375px;
+        margin:0 0 0 -8px;
     }
 
     #populaire
     {
         margin-left: 0;
         height: auto;
-        width: 90%;
+        width: 375px;
         border-radius: 0;
+        padding: 0 0 0 0;
     }
 
     #hebergement
     {
-        display: flex;
-        flex-direction: column;
-        width: 90%;
         height: auto;
         background-color: white;
-        padding-left: 30px;
     }
 
     #activites
     {
         display: flex;
         flex-direction: column;
-        width: auto;
         height: auto;
         background-color: white;
-        padding-left: 30px;
-        margin: 0;
+        margin:0 0 0 24px;
     }
 
     #footer
     {
-        margin: 0;
+        margin:0 0 0 -8px;
+        width: 375px;
     }
 
     .logo
@@ -573,7 +587,6 @@ CSS Responsive
         padding-left: 24px;
         font-weight: bold;
         color: #0065FC;
-        font-weight: bold;
     }
 
     .lien
@@ -581,12 +594,13 @@ CSS Responsive
         display: flex;
         justify-content: space-between;
         align-items: baseline;
+        width: 375px;
     }
 
     .lien__cards
     {
         display: flex;
-        width: 336px;
+        width: 375px;
     }
 
     .lien__cards a
@@ -599,7 +613,6 @@ CSS Responsive
         border-top: none;
         border-bottom: 3px solid #F2F2F2;
         width: inherit;
-        margin-right: 8px;
     }
 
     .lien__cards a:hover
@@ -615,11 +628,57 @@ CSS Responsive
         display: none;
     }
 
+    .recherche
+    {
+        display: flex;
+        justify-content: space-between;
+        width: 352px;
+        height: 52px;
+    }
+
+    .recherche input
+    {
+        font-weight: bold;
+    }
+
+    .recherche i
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 52px;
+        height: 52px;
+    }
+
+    #searchIcon
+    {
+        display: flex;
+        background-color: #0065FC;
+        color: white;
+        border-radius:10px;
+    }
+
+    .searchText
+    {
+        display: none;
+    }
+
     .filtres
     {
         display: flex;
-        flex-direction: column;
-        width: 200px;
+        flex-wrap: wrap;
+        margin-bottom: 16px;
+    }
+
+    .filtres h4
+    {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .cardsHebergement
+    {
+        width: 305px;
     }
 
     .cardsHebergement a
@@ -632,31 +691,15 @@ CSS Responsive
     {
         display: flex;
         flex-direction: column;
+        width: auto;
         height: auto;
-    }
-
-    .large
-    {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        margin-bottom: 50px;
-        background-color: white;
-        border-radius: 10px;
-        box-shadow: 10px 10px 5px grey;
-        padding: 4px;
-        width: 300px;
+        padding-left: 24px;
     }
 
     .large img
     {
-        display: flex;
-        align-items: flex-start;
         height: 146px;
         width: 120px;
-        border-top-left-radius: 10px;
-        border-bottom-left-radius : 10px;
-        position: absolute;
     }
 
     .cardsFooter
@@ -681,8 +724,19 @@ CSS Responsive
     .cards
     {
         height: auto;
-        width: 300px;
+        width: 100%;
         margin-right: 0;
+    }
+
+    .cards p
+    {
+        margin: 0;
+        padding-bottom: 12px;
+    }
+
+    .cards h4
+    {
+       margin: 0;
     }
 
     .cardsActivite
@@ -690,7 +744,7 @@ CSS Responsive
         flex-direction: column;
         align-items: flex-start;
         height: auto;
-        width: auto;
+        width: 305px;
         margin-right: 10px;
     }
 
@@ -703,8 +757,25 @@ CSS Responsive
     .grand, .petit, .partie
     {
         width: 100%;
+        align-items: self-start;
+        border: 0;
     }
     
+    .petit
+    {
+        height: 296px;
+    }
+
+    .grand, .partie
+    {
+        box-shadow: 2px 2px 2px 2px #F2F2F2;
+    }
+
+    .grand h4, .partie h4
+    {
+        margin: 5px 0 5px 0;
+    }
+
     .partie
     {
         height: 150px;
