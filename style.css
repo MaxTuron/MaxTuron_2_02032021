@@ -126,11 +126,19 @@ div recherche
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+}
 
+.lien__cards a
+{
+    color: black;
+    text-decoration: none;
+    padding-top: 10px;
+    border-top: 3px solid #F2F2F2;
 }
 
 .lien__cards a:hover
 {
+    color: #0065FC;
     padding-top: 10px;
     border-top: 3px solid #0065FC;
 }
@@ -138,6 +146,14 @@ div recherche
 .inscrire
 {
     padding-left: 24px;
+    font-weight: bold;
+}
+
+.inscrire a
+{
+    text-decoration: none;
+    color: #0065FC;
+    font-weight: bold;
 }
 
 
@@ -193,9 +209,9 @@ div de chaque filtre
 /*
 Permet de surligner les filtres
  */
-.cardsFiltres:hover
-{
-    color: green;
+.cardsFiltres:hover {
+    color: #0065FC;
+    background-color: #DEEBFF;
 }
 
 /*
@@ -220,6 +236,7 @@ Texte lié aux filtres
 {
     padding-left: 10px;
     padding-right: 10px;
+    font-weight: bold;
 }
 
 /*
@@ -473,11 +490,7 @@ button
 /*
 Supprime la décoration des liens
  */
-a
-{
-    text-decoration: none;
-    color: black;
-}
+
 
 
 /*
@@ -488,8 +501,8 @@ CSS Responsive
     #entete
     {
         display: flex;
-        justify-content: left;
         flex-direction: column;
+        align-items: flex-start ;
         margin: 0;
     }
 
@@ -540,10 +553,61 @@ CSS Responsive
         margin: 0;
     }
 
+    .logo
+    {
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        color: #0065FC;
+    }
+    
+    .logo img
+    {
+        padding-right: 140px;
+    }
 
     .respo
     {
         display: flex;
+        text-decoration: none;
+        padding-left: 24px;
+        font-weight: bold;
+        color: #0065FC;
+        font-weight: bold;
+    }
+
+    .lien
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    .lien__cards
+    {
+        display: flex;
+        width: 336px;
+    }
+
+    .lien__cards a
+    {
+        display: flex;
+        justify-content: center;
+        color: black;
+        text-decoration: none;
+        padding:0 0 10px 0;
+        border-top: none;
+        border-bottom: 3px solid #F2F2F2;
+        width: inherit;
+        margin-right: 8px;
+    }
+
+    .lien__cards a:hover
+    {
+        color: #0065FC;
+        padding:0 0 10px 0;
+        border-top: none;
+        border-bottom: 3px solid #0065FC;
     }
 
     .desk
@@ -556,6 +620,12 @@ CSS Responsive
         display: flex;
         flex-direction: column;
         width: 200px;
+    }
+
+    .cardsHebergement a
+    {
+        text-decoration: none;
+        color: black;
     }
 
     .cardsPopulaire
@@ -596,6 +666,12 @@ CSS Responsive
         margin-left: 10px;
     }
 
+    .cardsFooter a
+    {
+        text-decoration: none;
+        color: black;
+    }
+
     .foot
     {
         padding-right: 0;
@@ -616,6 +692,12 @@ CSS Responsive
         height: auto;
         width: auto;
         margin-right: 10px;
+    }
+
+    .cardsActivite a
+    {
+        text-decoration: none;
+        color: black;
     }
 
     .grand, .petit, .partie
