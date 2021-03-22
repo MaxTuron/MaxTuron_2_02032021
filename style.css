@@ -56,8 +56,8 @@ CSS des Div
     display: flex;
     flex-direction: column;
     background-color: #F2F2F2;
-    width: 65%;
-    height: 720px;
+    width: 75%;
+    height: 672px;
     padding-left: 30px;
     margin-bottom: 15px;
     border-radius: 10px;
@@ -71,8 +71,8 @@ CSS des Div
     display: flex;
     flex-direction: column;
     background-color: #F2F2F2;
-    height: 720px;
-    width: 35%;
+    height: 672px;
+    width: 25%;
     margin-left: 30px;
     padding-left: 30px;
     border-radius: 10px;
@@ -103,7 +103,7 @@ CSS des Div
 /*
 Balise i des 2 sous-parties de container
  */
-#hebergement i, #populaire i
+#hebergement i
 {
     color: #0065FC;
 }
@@ -126,35 +126,45 @@ div recherche
     display: none;
 }
 
-.lien
+.entete__lien
 {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
 }
 
+.lien__cards
+{
+    display: flex;
+}
+
 .lien__cards a
 {
+    display: flex;
+    justify-content: center;
     color: black;
     text-decoration: none;
     padding-top: 10px;
-    border-top: 3px solid #F2F2F2;
+    border-top: 3px solid white;
+    width: 150px;
 }
 
 .lien__cards a:hover
 {
+    display: flex;
+    justify-content: center;
     color: #0065FC;
     padding-top: 10px;
     border-top: 3px solid #0065FC;
 }
 
-.inscrire
+.entete__inscrire
 {
     padding-left: 24px;
     font-weight: bold;
 }
 
-.inscrire a
+.entete__inscrire a
 {
     text-decoration: none;
     color: #0065FC;
@@ -162,7 +172,7 @@ div recherche
 }
 
 
-.recherche
+.bandeau__recherche
 {
     display: flex;
     justify-content: center;
@@ -177,7 +187,7 @@ div recherche
 /*
 images de la div recherche
  */
-.recherche i
+.bandeau__recherche i
 {
     background-color: #F2F2F2;
     color: black;
@@ -193,7 +203,7 @@ images de la div recherche
 /*
 div filtres
  */
-.filtres
+.bandeau__filtres
 {
     display: flex;
 }
@@ -278,8 +288,8 @@ Classe générale des cartes
  */
 .cards
 {
-    width: 300px;
-    height: auto;
+    width: 332px;
+    height: 224px;
     margin-right: 40px;
     margin-bottom: 50px;
     background-color: white;
@@ -301,6 +311,12 @@ Images lié aux cartes
     border-radius: 10px 10px 0 0;
 }
 
+.cards h4, .cards p, .etoile
+{
+    margin: 0 0 8px 0;
+    padding: 0 0 0 8px;
+}
+
 .cardsHebergement
 {
     display: flex;
@@ -315,6 +331,7 @@ Images lié aux cartes
 {
     display: flex;
     flex-direction: column;
+
 }
 
 .infoPopulaire
@@ -335,20 +352,25 @@ Images lié aux cartes
 {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     margin-right: 40px;
     margin-bottom: 50px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 10px 10px 5px grey;
     padding: 4px;
+    height: 140px;
+    width: 328px;
 }
 
+.large i
+{
+    color: #0065FC;
+}
 .large img
 {
     display: flex;
     align-items: flex-start;
-    height: 130px;
+    height: 138px;
     width: 130px;
     border-top-left-radius: 10px;
     border-bottom-left-radius : 10px;
@@ -361,29 +383,37 @@ Images lié aux cartes
     padding-left: 150px;
 }
 
-
+.large h4
+{
+    margin: 8px 0 12px 0;
+}
+.large p
+{
+    margin: 0 0 48px 0;
+}
 
 
 /*
-Div cardsActivite
+Div activites__card
  */
-.cardsActivite
+.activites__card
 {
     display: flex;
-    height: 600px;
+    height: 492px;
+    margin: 0 0 58px 0;
 }
 /*
 Mise en forme des balises H4
  */
-.cardsActivite h4
+.activites__card h4
 {
     padding-left: 10px;
 }
 
 /*
-Div grand
+Div -big
  */
-.grand
+.-big
 {
     display: flex;
     flex-direction: column;
@@ -397,9 +427,9 @@ Div grand
 }
 
 /*
-Images de la div grand
+Images de la div -big
  */
-.grand img
+.-big img
 {
     width: 100%;
     height: 90%;
@@ -409,9 +439,9 @@ Images de la div grand
 }
 
 /*
-Div petit
+Div activites__card -small
  */
-.petit
+.-small
 {
     display: flex;
     flex-direction: column;
@@ -419,12 +449,13 @@ Div petit
     border-radius: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
+    height: 469px;
 }
 
 /*
-Images de la div petit
+Images de la div activites__card -small
  */
-.petit img
+.-small  img
 {
     width: 100%;
     height: 85%;
@@ -434,21 +465,43 @@ Images de la div petit
 }
 
 /*
-Sous-partie des la div petit
+Sous-partie des la div activites__card -small
  */
-.partie
+.part__med
 {
     display: flex;
     flex-direction: column;
-    height: 288px;
+    height: 235px;
     border-radius: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
+    margin: 0 10px 20px 0;
     border: 1px solid #F2F2F2;
     text-decoration: none;
     color: black;
 }
 
+.part__big
+{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 0 10px 20px 0;
+    border: 1px solid #F2F2F2;
+    text-decoration: none;
+    color: black;
+}
+
+.part__small
+{
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 0 10px 20px 0;
+    border: 1px solid #F2F2F2;
+    text-decoration: none;
+    color: black;
+}
 
 
 
@@ -490,6 +543,8 @@ input
 {
     border: none;
     width: 150px;
+    padding-left: 26px;
+    font-weight: bold;
 }
 
 /*
@@ -563,11 +618,11 @@ CSS Responsive
 
     #footer
     {
-        margin:0 0 0 -8px;
+        margin:0 0 -8px -8px;
         width: 375px;
     }
 
-    .logo
+    .entete__logo
     {
         display: flex;
         align-items: center;
@@ -575,7 +630,7 @@ CSS Responsive
         color: #0065FC;
     }
     
-    .logo img
+    .entete__logo img
     {
         padding-right: 140px;
     }
@@ -589,7 +644,7 @@ CSS Responsive
         color: #0065FC;
     }
 
-    .lien
+    .entete__lien
     {
         display: flex;
         justify-content: space-between;
@@ -628,7 +683,7 @@ CSS Responsive
         display: none;
     }
 
-    .recherche
+    .bandeau__recherche
     {
         display: flex;
         justify-content: space-between;
@@ -636,12 +691,12 @@ CSS Responsive
         height: 52px;
     }
 
-    .recherche input
+    .bandeau__recherche input
     {
         font-weight: bold;
     }
 
-    .recherche i
+    .bandeau__recherche i
     {
         display: flex;
         justify-content: center;
@@ -663,14 +718,14 @@ CSS Responsive
         display: none;
     }
 
-    .filtres
+    .bandeau__filtres
     {
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 16px;
     }
 
-    .filtres h4
+    .bandeau__filtres h4
     {
         width: 100%;
         margin-bottom: 0;
@@ -695,10 +750,15 @@ CSS Responsive
         height: auto;
         padding-left: 24px;
     }
+    
+    .large
+    {
+        width: 305px;
+    }
 
     .large img
     {
-        height: 146px;
+        height: 138px;
         width: 120px;
     }
 
@@ -739,7 +799,7 @@ CSS Responsive
        margin: 0;
     }
 
-    .cardsActivite
+    .activites__card
     {
         flex-direction: column;
         align-items: flex-start;
@@ -748,40 +808,40 @@ CSS Responsive
         margin-right: 10px;
     }
 
-    .cardsActivite a
+    .activites__card a
     {
         text-decoration: none;
         color: black;
     }
 
-    .grand, .petit, .partie
+    .-big, .-small , .part__med, .part__small, .part__big
     {
         width: 100%;
         align-items: self-start;
         border: 0;
     }
     
-    .petit
+    .-small
     {
         height: 296px;
     }
 
-    .grand, .partie
+    .-big, .part__med, .part__small, .part__big
     {
         box-shadow: 2px 2px 2px 2px #F2F2F2;
     }
 
-    .grand h4, .partie h4
+    .-big h4, .part__med h4, .part__small h4, .part__big h4
     {
         margin: 5px 0 5px 0;
     }
 
-    .partie
+    .part__med, .part__small, .part__big
     {
         height: 150px;
     }
 
-    .petit img, .grand img
+    .-small img, .-big img
     {
         width: 100%;
         height: 110px;

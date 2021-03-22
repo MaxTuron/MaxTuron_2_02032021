@@ -10,17 +10,17 @@
 
     <body> <!-- Corps du code -->
         <div id="entete"> <!-- 1er bloc, Entete ,logo et lien -->
-            <div class="logo">
+            <div class="entete__logo">
                 <img src="images/logo/Reservia.svg" alt="Logo de Reservia"> <!-- Lien bers l'image du logo -->
                 <a href="https://openclassrooms.com" class="respo">S'inscrire</a>
             </div>
-            <div class="lien">
+            <div class="entete__lien">
                 <div class="lien__cards">
                     <a href="#hebergement">Hébergement</a>
                     <a href="#activites">Activités</a>
                 </div>
 
-                <div class="inscrire">
+                <div class="entete__inscrire">
                     <a href="https://openclassrooms.com" class="desk">S'inscrire</a>
                 </div>
             </div>
@@ -34,14 +34,14 @@
             En plein centre ville ou en pleine nature
         </div>
 
-        <div class="recherche"> <!-- Div de la barre de recherche -->
+        <div class="bandeau__recherche"> <!-- Div de la barre de recherche -->
             <i class="fas fa-map-marker-alt" ></i> <!--Icone de marqueur -->
             <input type="search" id="site-search" name="recherche" aria-label="Search through site content" value="Marseille,France"> <!--Barre de recherche -->
             <button class="searchText">Rechercher</button> <!-- Bouton rechercher -->
             <i class="fas fa-search" id="searchIcon"></i>
         </div>
 
-        <div class="filtres"> <!-- Filtres de recherche -->
+        <div class="bandeau__filtres"> <!-- Filtres de recherche -->
             <h4>Filtres</h4>
             <div class="cardsFiltres">
                 <i class="fas fa-money-bill-wave iconFiltres"></i>
@@ -84,11 +84,13 @@
                     <h4>Auberge de la Cannebière</h4>
                     <p>Nuit à partir de 25€</p>
                     <!-- Liste des images étoiles -->
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
+                    <div class="etoile">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
                 </a>
 
                 <a href="https://openclassrooms.com/fr/paths/185/projects/639/assignment" class="cards"> <!-- 2eme Hôtel de la 1ere ligne -->
@@ -96,11 +98,13 @@
                     <h4>Hôtel du port</h4>
                     <p>Nuit à partir de 52€</p>
                     <!-- Liste des images étoiles -->
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+                    <div class="etoile">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
                 </a>
 
                 <a href="https://openclassrooms.com/fr/paths/185/projects/639/assignment" class="cards"> <!-- 3eme Hôtel de la 1ere ligne -->
@@ -108,11 +112,13 @@
                     <h4>Hôtel Les mouettes</h4>
                     <p>Nuit à partir de 76€</p>
                     <!-- Liste des images étoiles -->
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
+                    <div class="etoile">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
                 </a>
 
                 <a href="https://openclassrooms.com/fr/paths/185/projects/639/assignment" class="cards"> <!-- 1er Hôtel de la 2eme ligne -->
@@ -120,11 +126,13 @@
                     <h4>Hôtel de la mer</h4>
                     <p>Nuit à partir de 46€</p>
                     <!-- Liste des images étoiles -->
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                    <i class="far fa-star"></i>
+                    <div class="etoile">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
                 </a>
 
                 <a href="https://openclassrooms.com/fr/paths/185/projects/639/assignment" class="cards"> <!-- 2eme Hôtel de la 2eme ligne -->
@@ -132,11 +140,13 @@
                     <h4>Auberge Le Panier</h4>
                     <p>Nuit à partir de 23€</p>
                     <!-- Liste des images étoiles -->
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
+                    <div class="etoile">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
                 </a>
 
                 <a href="https://openclassrooms.com/fr/paths/185/projects/639/assignment" class="cards"> <!-- 3eme Hôtel de la 2eme ligne -->
@@ -144,11 +154,13 @@
                     <h4>Hôtel Chez Amina</h4>
                     <p>Nuit à partir de 96€</p>
                     <!-- Liste des images étoiles -->
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+                    <div class="etoile">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
                 </a>
 
             </div>
@@ -211,19 +223,19 @@
         <div>
             <h3>Activités à Marseille</h3>
         </div>
-        <div class="activites__card cardsActivite">
-            <a href="https://openclassrooms.com/fr/paths/185/projects/639/assignment" class="activites__card -big grand">
+        <div class="activites__card">
+            <a href="https://openclassrooms.com/fr/paths/185/projects/639/assignment" class="activites__card -big">
                 <img src="images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
                 <h4>Vieux Port</h4>
             </a>
 
 
-            <div class="petit">
-                <a href="https://openclassrooms.com/fr/paths/185/projects/639/assignment" class="partie">
-                    <img src="images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Pomègues">
+            <div class="activites__card -small">
+                <a href="https://openclassrooms.com/fr/paths/185/projects/639/assignment" class="part__big">
+                    <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Pomègues">
                     <h4>Fort de Pomègues</h4>
                 </a>
-                <a href="https://openclassrooms.com/fr/paths/185/projects/639/assignment" class="partie">
+                <a href="https://openclassrooms.com/fr/paths/185/projects/639/assignment" class="part__small">
                     <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Frioul">
                     <h4>Îles du Frioul</h4>
                 </a>
@@ -231,19 +243,19 @@
 
 
 
-            <a href="https://openclassrooms.com/fr/paths/185/projects/639/assignment" class="activites__card -big grand">
+            <a href="https://openclassrooms.com/fr/paths/185/projects/639/assignment" class="activites__card -big">
                 <img src="images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Calanques">
                 <h4>Parc National des Calanques</h4>
             </a>
 
 
 
-            <div class="petit">
-                <a href="https://openclassrooms.com/fr/paths/185/projects/639/assignment" class="partie">
+            <div class="activites__card -small">
+                <a href="https://openclassrooms.com/fr/paths/185/projects/639/assignment" class="part__med">
                     <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
                     <h4>Notre-Dame-de-la-Garde</h4>
                 </a>
-                <a href="https://openclassrooms.com/fr/paths/185/projects/639/assignment" class="partie">
+                <a href="https://openclassrooms.com/fr/paths/185/projects/639/assignment" class="part__med">
                     <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Longchamp">
                     <h4>Parc Longchamp</h4>
                 </a>
