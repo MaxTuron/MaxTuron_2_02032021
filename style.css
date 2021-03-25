@@ -119,7 +119,7 @@ CSS des classes
 div recherche
  */
 
-.respo
+.mobile
 {
     display: none;
 }
@@ -587,7 +587,7 @@ button
     border-bottom-right-radius : 10px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 376px) and (max-width: 1649px) {
     
     body
     {
@@ -612,12 +612,12 @@ button
     
     #footer
     {
-        width: 982px;
+        width: 1024px;
     }
     
     .foot
     {
-        padding-right: 180px;
+        padding-right: 132px;
     }
 
     .cards
@@ -636,6 +636,11 @@ CSS Responsive
  */
 
 @media screen and (max-width: 375px) {
+    
+    .body
+    {
+        width: 362px;
+    }
     #entete
     {
         display: flex;
@@ -683,7 +688,6 @@ CSS Responsive
 
     #footer
     {
-        margin:0 0 -8px -8px;
         width: 375px;
     }
 
@@ -700,7 +704,7 @@ CSS Responsive
         padding-right: 140px;
     }
 
-    .respo
+    .mobile
     {
         display: flex;
         text-decoration: none;
@@ -743,7 +747,7 @@ CSS Responsive
         border-bottom: 3px solid #0065FC;
     }
 
-    .desk
+    .desktop
     {
         display: none;
     }
@@ -788,6 +792,7 @@ CSS Responsive
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 16px;
+        width: 362px;
     }
 
     .bandeau__filtres h4
