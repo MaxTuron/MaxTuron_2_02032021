@@ -141,7 +141,7 @@ CSS des classes
     justify-content: center;
     color: black;
     text-decoration: none;
-    padding-top: 10px;
+    padding-top: 28px;
     border-top: 3px solid white;
     width: 150px;
 }
@@ -151,7 +151,7 @@ CSS des classes
     display: flex;
     justify-content: center;
     color: #0065FC;
-    padding-top: 10px;
+    padding-top: 28px;
     border-top: 3px solid #0065FC;
 }
 
@@ -693,7 +693,7 @@ CSS Responsive Mobile
     {
         display: flex;
         justify-content: space-between;
-        align-items: baseline;
+        align-items: end;
         width: 375px;
     }
 
