@@ -11,6 +11,11 @@ body
     margin: 0;
 }
 
+section
+{
+    margin: 0 5% 0 5%;
+}
+
 /*
 CSS des Div
  */
@@ -18,7 +23,7 @@ CSS des Div
 /*
 1er bloc
  */
-#entete
+.header
 {
     display: flex;
     justify-content: space-between;
@@ -85,8 +90,10 @@ CSS des Div
  */
 #footer
 {
+    display: flex;
+    flex-direction: row;
     background-color: #F2F2F2;
-    padding-bottom: 20px;
+    padding: 18px;
 }
 
 /*
@@ -117,7 +124,7 @@ CSS des classes
     display: none;
 }
 
-.entete__lien
+.header__lien
 {
     display: flex;
     align-items: baseline;
@@ -148,13 +155,13 @@ CSS des classes
     border-top: 3px solid #0065FC;
 }
 
-.entete__inscrire
+.header__inscrire
 {
     padding-left: 24px;
     font-weight: bold;
 }
 
-.entete__inscrire a
+.header__inscrire a
 {
     text-decoration: none;
     color: #0065FC;
@@ -404,7 +411,7 @@ Images de la div -big
 .-big img
 {
     width: 100%;
-    height: 454px;
+    height: 462px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     object-fit: cover;
@@ -502,24 +509,15 @@ Sous-partie des la div activites__card -small
 }
 
 /*
-Mise en page des liens dans le pied de page
- */
-.cardsFooter
-{
-    display: flex;
-    justify-content: space-between;
-}
-
-/*
 Ajustement des liens
  */
-.foot
+.footer_column
 {
     padding-right: 400px;
     padding-left: 10px;
 }
 
-.foot a
+.footer_column a
 {
     text-decoration: none;
     color: black;
@@ -583,10 +581,10 @@ CSS responsive Tablette
     
     #footer
     {
-        width: 1024px;
+        width: 988px;
     }
     
-    .foot
+    .footer_column
     {
         padding-right: 132px;
     }
@@ -612,7 +610,7 @@ CSS Responsive Mobile
     {
         width: 362px;
     }
-    #entete
+    .header
     {
         display: flex;
         flex-direction: column;
@@ -659,10 +657,12 @@ CSS Responsive Mobile
 
     #footer
     {
-        width: 375px;
+        display: flex;
+        flex-direction: column;
+        width: 332px;
     }
 
-    .entete__logo
+    .header__logo
     {
         display: flex;
         align-items: center;
@@ -670,7 +670,7 @@ CSS Responsive Mobile
         color: #0065FC;
     }
     
-    .entete__logo img
+    .header__logo img
     {
         padding-right: 140px;
     }
@@ -684,12 +684,24 @@ CSS Responsive Mobile
         color: #0065FC;
     }
 
-    .entete__lien
+    .header__logo
+    {
+        margin-left: -114px;
+    }
+
+    .header__lien
     {
         display: flex;
         justify-content: space-between;
         align-items: baseline;
         width: 375px;
+    }
+
+    .header__inscrire
+    {
+        position: absolute;
+        bottom: 778px;
+        right: 22px;
     }
 
     .lien__cards
@@ -716,11 +728,6 @@ CSS Responsive Mobile
         padding:0 0 10px 0;
         border-top: none;
         border-bottom: 3px solid #0065FC;
-    }
-
-    .desktop
-    {
-        display: none;
     }
 
     .bandeau__recherche
@@ -803,20 +810,7 @@ CSS Responsive Mobile
         width: 120px;
     }
 
-    .cardsFooter
-    {
-        display: flex;
-        flex-direction: column;
-        margin-left: 10px;
-    }
-
-    .cardsFooter a
-    {
-        text-decoration: none;
-        color: black;
-    }
-
-    .foot
+    .footer_column
     {
         padding-right: 0;
         padding-left: 0;
